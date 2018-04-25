@@ -34,10 +34,10 @@ SELECT Employees.LAST_NAME, Employees.SALARY, Jobs.JOB_TITLE FROM Employees
   AND Employees.SALARY NOT LIKE 4500 OR 10000 OR 15000;
 
 #Query 7 display the last name of employees whose first names have exactly 6 characters
-SELECT Employees.LAST_NAME FROM Employees 
-  WHERE Employees.LAST_NAME LIKE '______';
+SELECT Employees.FIRST_NAME FROM Employees 
+  WHERE Employees.FIRST_NAME LIKE '______';
 
-#Query 8 display the last name of employees having 'e' as the third car·cter
+#Query 8 display the last name of employees having 'e' as the third car√°cter
 SELECT Employees.LAST_NAME FROM Employees 
  WHERE Employees.LAST_NAME LIKE '__e%';
 
