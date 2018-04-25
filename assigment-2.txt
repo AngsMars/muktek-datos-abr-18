@@ -13,18 +13,18 @@ id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(25) NOT NULL
 );
 
-CREATE TABLE IF NOT EXISTS teacher_courses(
+CREATE TABLE IF NOT EXISTS teachers_courses(
 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 teacher_id INT NOT NULL,
 FOREIGN KEY (teacher_id) REFERENCES teachers(id),
-course_id INT NOT NULL UNIQUE,
+course_id INT NOT NULL,
 FOREIGN KEY (course_id) REFERENCES courses(id)
 );
 
-CREATE TABLE IF NOT EXISTS student_courses(
+CREATE TABLE IF NOT EXISTS students_courses(
 id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
 student_id INT NOT NULL,
 FOREIGN KEY (student_id) REFERENCES students(id),
-course_id INT NOT NULL UNIQUE,
+course_id INT NOT NULL,
 FOREIGN KEY (course_id) REFERENCES courses(id)
 );
