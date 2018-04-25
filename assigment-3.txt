@@ -51,4 +51,4 @@ SELECT Employees.FIRST_NAME, Employees.LAST_NAME, Employees.SALARY, (Employees.S
 
 #Query 11 select all record from employees where last name in 'BLAKE', 'SCOTT', 'KING' and 'FORD'
 SELECT * FROM Employees
-  WHERE Employees.LAST_NAME IN ('JONES', 'BLAKE', 'SCOTT', 'KING', 'FORD');
+  WHERE Employees.LAST_NAME IN ('BLAKE', 'SCOTT', 'KING', 'FORD');
